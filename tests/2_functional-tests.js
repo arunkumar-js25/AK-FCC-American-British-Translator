@@ -3,11 +3,11 @@ const chaiHttp = require('chai-http');
 const assert = chai.assert;
 const server = require('../server.js');
 
-chai.use(chaiHttp);
+chai.use(chaiHttp); 
 
 let Translator = require('../components/translator.js');
 
-suite('Functional Tests', () => {
+suite('Functional Tests', () => { 
   test('1', function (done) {
      chai
 			.request(server)
